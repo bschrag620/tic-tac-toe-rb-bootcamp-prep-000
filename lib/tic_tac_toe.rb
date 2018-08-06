@@ -73,7 +73,7 @@ def play(array)
     elsif full?(array)
       puts "Cat's Game!"
     end
-  end 
+  end
 end
 
 def won?(array)

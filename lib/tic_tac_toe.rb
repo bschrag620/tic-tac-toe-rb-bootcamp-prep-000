@@ -68,15 +68,10 @@ end
 def play(array)
   while !over?(array) do
     turn(array)
-    if won?(array)
-      puts "Congratulations #{array[won?(array)[0]]}!"
-    elsif full?(array)
-      puts "Cat's Game!"
-    end
   end
   if won?(array)
     puts "Congratulations #{array[won?(array)[0]]}!"
-  elsif full?(array)
+  else
     puts "Cat's Game!"
   end
 end
